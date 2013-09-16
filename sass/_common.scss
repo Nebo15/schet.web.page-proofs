@@ -147,7 +147,45 @@ a{
     height: 70px;
     background: #eff3f6;
     border-top: 1px solid #fff;
-    border-bottom: 1px soid #dae0e5;
+    border-bottom: 1px solid #dae0e5;
+}
+.menu{
+    width: 956px;
+    margin: 0 auto;
+    @include clr;
+}
+.menu__item{
+    display: table;
+    float: left;
+    width: 190px;
+    height: 70px;
+    border-right: 1px solid #dae0e5;
+    &:first-child{
+        border-left: 1px solid #dae0e5;
+    }
+    a{
+        display: table-cell;
+        padding: 0 10px;
+        color: #2c3e50;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+        vertical-align: middle;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.menu__item.is-active{
+    position: relative;
+    top: -1px;
+    height: 72px;
+    background: #919faf;
+    @include background-image(linear-gradient(top, #768597 0%, #919faf 20%, #919faf 90%, #8e9cac 100%));
+    a{
+        color: #fff;
+        @include text-shadow(0 1px 0 rgba(0,0,0,.5));
+    }
 }
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
