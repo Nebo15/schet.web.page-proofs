@@ -113,8 +113,8 @@ a{
 }
 .banner{
     position: absolute;
-    bottom: 45px;
-    right: 358px;
+    bottom: 140px;
+    left: 265px;
     height: 148px;
     width: 470px;
     overflow: hidden;
@@ -354,6 +354,7 @@ a{
     position: relative;
     width: 410px;
     height: 59px;
+    margin-top: 10px;
     @include border-radius(4px);
     background: #3ec1a7;
     color: #fff;
@@ -364,4 +365,13 @@ a{
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */  
+.footer{
+    height: 110px;
+    p{
+        padding-top: 28px;
+        text-align: center;
+        color: #747677;
+        @include helv;
+    }
+}
 /* -------------------------------------- //END Footer ------------------------------------------- */
