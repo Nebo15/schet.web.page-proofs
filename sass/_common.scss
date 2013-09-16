@@ -197,6 +197,10 @@ a{
     color: #2c3e50;
     text-align: center;
 }
+.h1_mod{
+    text-align: left;
+    color: #596e84;
+}
 .h2{
     font-size: 15px;
     font-weight: bold;
@@ -226,6 +230,74 @@ a{
         font-size: 13px;
         color: #424242;
     }
+}
+.container{
+    background: #ebf1f5;
+}
+.about{
+    @include clr;
+    width: 820px;
+    margin: 0 auto;
+    background: #f5f8fa;
+    padding: 41px 70px;
+    border-top: 1px solid #d5dbe0;
+    &:first-child{
+        border-top: none;
+    }
+}
+.about_mod{
+    .about__img{
+        float: right;
+    }
+    .about__text{
+        float: left;
+    }
+}
+.about__img{
+    float: left;
+    padding-top: 25px;
+}
+.about__text{
+    float: right;
+    width: 500px;
+    article{
+        margin-top: 10px;
+    }
+    p, ul{
+        margin-bottom: 20px;
+    }
+    li{
+        position: relative;
+        padding-left: 20px;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            @include s(list);
+        }
+       
+    }
+}
+.use{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2eab92;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: -20px;
+        @include s(arr-right2);
+    }
+}
+.l-form{
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
 }
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
