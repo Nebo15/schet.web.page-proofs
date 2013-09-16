@@ -187,6 +187,43 @@ a{
         @include text-shadow(0 1px 0 rgba(0,0,0,.5));
     }
 }
+.tasks{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 52px;
+}
+.h1{
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+}
+.h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.task-list{
+    @include clr;
+    margin-top: 65px;
+}
+.task{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    padding-bottom: 86px;
+}
+.task__img{
+    float: left;
+    margin-right: 25px;
+}
+.task__text{
+    overflow: hidden;
+    p{
+        margin-top: 23px;
+        font-size: 13px;
+        color: #424242;
+    }
+}
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */  

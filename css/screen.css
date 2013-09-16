@@ -75,6 +75,22 @@ a:hover { text-decoration: underline; }
 .menu__item.is-active { position: relative; top: -1px; height: 72px; background: #919faf; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc2ODU5NyIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjOTE5ZmFmIi8+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiM5MTlmYWYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZTljYWMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #768597), color-stop(20%, #919faf), color-stop(90%, #919faf), color-stop(100%, #8e9cac)); background-image: -webkit-linear-gradient(top, #768597 0%, #919faf 20%, #919faf 90%, #8e9cac 100%); background-image: -moz-linear-gradient(top, #768597 0%, #919faf 20%, #919faf 90%, #8e9cac 100%); background-image: -o-linear-gradient(top, #768597 0%, #919faf 20%, #919faf 90%, #8e9cac 100%); background-image: linear-gradient(top, #768597 0%, #919faf 20%, #919faf 90%, #8e9cac 100%); }
 .menu__item.is-active a { color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
 
+.tasks { width: 960px; margin: 0 auto; padding-top: 52px; }
+
+.h1 { font-size: 36px; color: #2c3e50; text-align: center; }
+
+.h2 { font-size: 15px; font-weight: bold; color: #2c3e50; }
+
+.task-list { *zoom: 1; margin-top: 65px; }
+.task-list:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.task { float: left; width: 50%; overflow: hidden; padding-bottom: 86px; }
+
+.task__img { float: left; margin-right: 25px; }
+
+.task__text { overflow: hidden; }
+.task__text p { margin-top: 23px; font-size: 13px; color: #424242; }
+
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 /* ----------------------------------------- Footer ---------------------------------------------- */
 /* -------------------------------------- //END Footer ------------------------------------------- */
