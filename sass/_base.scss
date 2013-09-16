@@ -4,6 +4,19 @@
 @import "lib/media";
 @import "lib/ceaser-easing/ceaser";
 
+// fonts
+@font-face {
+    font-family: 'helveticaneue';
+    src: url('../fonts/helveticaneue.eot');
+    src: url('../fonts/helveticaneue.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue.woff') format('woff'),
+         url('../fonts/helveticaneue.ttf') format('truetype'),
+         url('../fonts/helveticaneue.svg#helveticaneuecyrroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // gradients for ie
 $experimental-support-for-svg: true;
 
@@ -91,18 +104,18 @@ $break-large: 1180px;
 }
 
 // placeholder color
-@mixin placeholder($color, $font-family) {
+@mixin placeholder($color, $font-family, $type) {
   &.placeholder {
     color: $color;
-    font-family: $font-family;
+    font-family: $font-family, $type;
   }
   &:-moz-placeholder {
     color: $color;
-    font-family: $font-family;
+    font-family: $font-family, $type;
   }
   &::-webkit-input-placeholder {
     color: $color;
-    font-family: $font-family;
+    font-family: $font-family, $type;
   }
 }
 
@@ -180,8 +193,8 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
 }
 
 // fonts
-@mixin font {
+@mixin helv {
     font-weight: normal;
     font-style: normal;
-    font-family: 'Custom font', sans-serif;
+    font-family: 'helveticaneue', Arial,  sans-serif;
 }
