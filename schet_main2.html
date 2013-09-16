@@ -7,7 +7,8 @@
 	<title>Template</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scrollto.js"></script>
     <script src="js/common.js"></script>  
     <!--[if lt IE 9]> 
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
@@ -24,25 +25,27 @@
         </div>
     </header>
     <section class="top">
-        <img class="women" src="img/women.png" alt="">
+        <div class="top__in">
+        <img class="women woman_alt" src="img/women.png" alt="">
         <div class="banner">
             <i class="banner__icon"></i>
             <div class="banner__text">
                 <h1 class="title">Счет<span>.ru –</span></h1>
                 <p>новая услуга по автоматизации платежей</p>
             </div>
+        </div>
         </div> 
     </section>
     <nav class="l-menu">
-        <ul class="menu">
-            <li class="menu__item is-active"><a href="#">Какие задачи мы решаем?</a></li>
-            <li class="menu__item"><a href="#">Банкам</a></li>
-            <li class="menu__item "><a href="#">Провайдерам услуг</a></li>
-            <li class="menu__item"><a href="#">Интеграторам</a></li>
-            <li class="menu__item"><a href="#">Процессинговым компаниям</a></li>
+       <ul class="menu">
+            <li class="menu__item is-active menu__tasks"><a href="#tasks">Какие задачи<br> мы решаем?</a></li>
+            <li class="menu__item menu__banks"><a href="#banks">Банкам</a></li>
+            <li class="menu__item menu__providers "><a href="#providers">Провайдерам<br> услуг</a></li>
+            <li class="menu__item menu__integrators"><a href="#integrators">Интеграторам</a></li>
+            <li class="menu__item menu__processing"><a href="#processing">Процессинговым компаниям</a></li>
         </ul>
     </nav>
-    <section class="l-tasks">
+    <section class="l-tasks" id="tasks">
         <div class="tasks">
             <h1 class="h1">Какие задачи мы решаем?</h1>
             <div class="task-list">
@@ -77,7 +80,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="banks">
         <div class="about">
             <div class="about__img">
                 <img src="img/about1.png" alt="">
@@ -96,16 +99,18 @@
                 </article>
             </div>
         </div>
-        <div class="about about_mod">
+        <div class="about about_mod" id="providers">
             <div class="about__text">
-                <h1 class="h1 h1_mod">Для банков</h1>
+                <h1 class="h1 h1_mod">Для провайдеров услуг</h1>
                 <article>
-                    <p>Приоритет для банков – возможность обеспечить своих клиентов удобным инструментом для оперативного распоряжения средствами. Предоставляя клиентам готовый и работающий продукт банк получает прозрачный транзакционный доход и не тратит время и средства на разработку.</p>
-                    <b>Предлагая услугу автоплатежа, банк:</b>
+                    <p>Компании любого масштаба стремятся упростить и удешевить процессы, связанные с получением денег от клиента.
+Чем лучше отлажен процесс оплаты, тем легче компаниям сконцентрироваться на своем бизнесе.</p>
+                    <b>Используя автоплатеж ваша компания:
+</b>
                     <ul>
-                        <li>повышает лояльность клиента</li>
-                        <li>способствует повышению оперативных остатков</li>
-                        <li>получает дополнительный доход</li>
+                        <li>повысит лояльность клиентов</li>
+                        <li>обеспечит стабильность поступлений</li>
+                        <li>удешевит процесс получения средств</li>
                     </ul>
                     <a class="use" href="#">Подключить автоплатёж</a>
                 </article>
@@ -114,34 +119,35 @@
                 <img src="img/about2.png" alt="">
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="integrators">
             <div class="about__img">
                 <img src="img/about3.png" alt="">
             </div>
             <div class="about__text">
-                <h1 class="h1 h1_mod">Для банков</h1>
+                <h1 class="h1 h1_mod">Для интеграторов</h1>
                 <article>
-                    <p>Приоритет для банков – возможность обеспечить своих клиентов удобным инструментом для оперативного распоряжения средствами. Предоставляя клиентам готовый и работающий продукт банк получает прозрачный транзакционный доход и не тратит время и средства на разработку.</p>
-                    <b>Предлагая услугу автоплатежа, банк:</b>
-                    <ul>
-                        <li>повышает лояльность клиента</li>
-                        <li>способствует повышению оперативных остатков</li>
-                        <li>получает дополнительный доход</li>
-                    </ul>
+                    <p>Интеграторы и владельцы основных решений (банковских АБС, систем удаленного управления счетами, которые банки предоставляют клиентам, POS, etc), работающие в банковской или розничной индустриях обладают готовой базой клиентов,
+и возможностью получать стабильный ежемесячный доход.
+</p>
+                    
                     <a class="use" href="#">Подключить автоплатёж</a>
                 </article>
             </div>
         </div>
-        <div class="about about_mod">
+        <div class="about about_mod" id="processing">
             <div class="about__text">
-                <h1 class="h1 h1_mod">Для банков</h1>
+                <h1 class="h1 h1_mod">Для процессинговых компаний</h1>
                 <article>
-                    <p>Приоритет для банков – возможность обеспечить своих клиентов удобным инструментом для оперативного распоряжения средствами. Предоставляя клиентам готовый и работающий продукт банк получает прозрачный транзакционный доход и не тратит время и средства на разработку.</p>
-                    <b>Предлагая услугу автоплатежа, банк:</b>
+                    <p>Компании, которые обеспечивают процессинг платежей,
+платежных карточек обладают уникальной возможностью повысить уровень своих доходов, подключив к автоплатежу банки-аффилиаты.
+Автоплатеж привлекателен для процессинговых компаний
+по следующим причинам:</p>
+        
                     <ul>
-                        <li>повышает лояльность клиента</li>
-                        <li>способствует повышению оперативных остатков</li>
-                        <li>получает дополнительный доход</li>
+                        <li>перспективный продукт в портфолио (растущий рынок)</li>
+<li>прозрачная, транзакционная модель дохода</li>
+<li>минимальные издержки на внедрение</li>
+<li>продажи и поддержку обеспечивает <strong>КредитПилот</strong></li>
                     </ul>
                     <a class="use" href="#">Подключить автоплатёж</a>
                 </article>
