@@ -88,7 +88,7 @@ a:hover { text-decoration: underline; }
 
 .task__img { float: left; margin-right: 25px; }
 
-.task__text { overflow: hidden; }
+.task__text { width: 327px; overflow: hidden; padding-right: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .task__text p { margin-top: 23px; font-size: 13px; color: #424242; }
 
 /* ---------------------------------- //END Independent blocks ----------------------------------- */

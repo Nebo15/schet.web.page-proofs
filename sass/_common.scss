@@ -217,7 +217,10 @@ a{
     margin-right: 25px;
 }
 .task__text{
+    width: 327px;
     overflow: hidden;
+    padding-right: 30px;
+    @include box-sizing(border-box);
     p{
         margin-top: 23px;
         font-size: 13px;
