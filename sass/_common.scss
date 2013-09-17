@@ -441,6 +441,10 @@ a{
     width: 200px;
     height: 32px;
     font-size: 13px;
+    z-index: 1;
+    &:active{
+        top: 12px;
+    }
 }
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
