@@ -84,7 +84,7 @@ a{
     }
     p{
         display: inline-block;
-        width: 50px;
+        width: 80px;
         font-size: 8px;
         line-height: 1.4;
         color: #6a7e8f;
@@ -92,6 +92,8 @@ a{
     }
 }
 .arr-icon{
+    position: relative;
+    top: -2px;
     display: inline-block;
     @include s(arr-right);
 }
@@ -202,15 +204,16 @@ a{
     margin-bottom: 70px;
 }
 .menu{
-    width: 956px;
+    width: 960px;
     margin: 0 auto;
     @include clr;
 }
 .menu__item{
     display: table;
     float: left;
-    width: 190px;
+    width: 192px;
     height: 70px;
+    @include box-sizing(border-box);
     border-right: 1px solid #dae0e5;
     &:first-child{
         border-left: 1px solid #dae0e5;
@@ -341,7 +344,7 @@ a{
     &:after{
         content: "";
         position: absolute;
-        top: 5px;
+        top: 4px;
         right: -20px;
         @include s(arr-right2);
     }
@@ -389,7 +392,7 @@ a{
         line-height: 40px;
     }
     ul{
-        display: none;
+        // display: none;
         position: absolute;
         width: 100%;
         top: 39px;
@@ -397,9 +400,13 @@ a{
         z-index: 1;
         li{
             height: 40px;
+            line-height: 40px;
             padding: 0 15px;
             border: 1px solid #e1e3e4;
             background: #f5f8fa;
+            &:hover{
+                background: darken(#f5f8fa, 5%);
+            }
         }
     }
 }
@@ -414,6 +421,13 @@ a{
     font-size: 16px;
     font-weight: bold;
     @include box-shadow(0px 2px 0px #288d79);
+    &:hover{
+        background: darken(#3ec1a7, 5%);
+    }
+    &:active{
+        @include box-shadow(none);
+        top: 2px;
+    }
 }
 .btn_mod{
     width: 100%;

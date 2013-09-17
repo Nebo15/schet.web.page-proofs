@@ -80,5 +80,20 @@ $('.menu__item>a').click(function(){
 		  $('body').removeClass('is-fixednav');
 		}
 	})
+
+$(".select ul").hide();
+$(".select").click(function(){
+	$(this).find('ul').toggle();
+});
+$(".select ul li").click(function(){
+	var select = $(this).text();
+	$(this).parent().parent().find('.select__value').text(select);
+});
+
+$(".use").click(function(){
+	jQuery.scrollTo('.form-popup', 400);
+	return false;
+});
+
 });
 
