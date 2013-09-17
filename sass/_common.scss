@@ -67,6 +67,7 @@ a{
     padding: 0 30px;
 }
 .header{
+    position: relative;
     height: 70px;
 }
 .logo{
@@ -116,10 +117,10 @@ a{
 .women{
     position: absolute;
     top: -45px;
-    right: 145px;
+    right: -265px;
 }
 .woman_alt{
-    right: 0;
+    right: 20px;
 }
 .form-popup{
     position: absolute;
@@ -432,6 +433,14 @@ a{
 .btn_mod{
     width: 100%;
     height: 49px;
+}
+.btn_head{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 200px;
+    height: 32px;
+    font-size: 13px;
 }
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
