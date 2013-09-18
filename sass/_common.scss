@@ -101,7 +101,8 @@ a{
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */
-body{
+.sitewrap{
+    width: 100%;
     min-width: 956px;
     overflow: hidden;
 }
@@ -454,11 +455,14 @@ body{
 }
 .btn_b2b{
     position: absolute;
-    top: -60px;
+    top: -61px;
     right: 100px;
     width: 100px;
     height: 32px;
     z-index: 200;
+    &.alt{
+        right: 450px;
+    }
     &:active{
         top: 12px;
     }
